@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# _string_literal: true
 
 Message.create(content: 'Hello Everyone')
 Message.create(content: 'Good morning')
