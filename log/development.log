@@ -19,3 +19,30 @@ Processing by Api::MessagesController#index as JSON
 Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 811)
 
 
+Started GET "/api/messages" for 127.0.0.1 at 2022-06-18 16:47:10 +0100
+  
+SyntaxError (/home/fobadara/My-projects/hello-back-end-rails/app/controllers/api/messages_controller.rb:9: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/api/messages_controller.rb:9: syntax error, unexpected `end', expecting end-of-input
+app/controllers/api/messages_controller.rb:9: syntax error, unexpected `end', expecting end-of-input
+Started GET "/api/messages" for 127.0.0.1 at 2022-06-18 16:48:09 +0100
+Processing by Api::MessagesController#index as JSON
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `index'
+Completed 200 OK in 50ms (Views: 0.7ms | ActiveRecord: 22.6ms | Allocations: 2867)
+
+
+Started GET "/api/messages" for 127.0.0.1 at 2022-06-18 16:48:13 +0100
+Processing by Api::MessagesController#index as JSON
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.9ms | Allocations: 687)
+
+
+Started GET "/api/messages" for 127.0.0.1 at 2022-06-18 16:48:15 +0100
+Processing by Api::MessagesController#index as JSON
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 690)
+
+
