@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# _string_literal: true
+
 require 'test_helper'
 
 class MessageTest < ActiveSupport::TestCase
